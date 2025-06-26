@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Farsan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NZ:wght@100..400&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -9,6 +10,7 @@
   --font-dancing: "Dancing Script", 'sans-serif';
   --font-vibes: "Great Vibes", cursive;
   --font-farsan: "Farsan", cursive;
+  --font-playwrite: "Playwrite NZ", cursive;
   --color-purple: #6905d2;
   --color-lightPink: #fcc0c5;
   --color-mediumPink: #f9728c;

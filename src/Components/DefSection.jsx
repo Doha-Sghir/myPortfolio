@@ -12,9 +12,11 @@ export default function DefSection() {
   return (
     <div style={{ backgroundImage: `url(${background})` }}>
       <div className="px-5 py-10 sm:px-30 sm:py-20 
-                      grid sm:grid-cols-2 grid-cols-1 items-center" >
-        <img src={profile} className="sm:w-3/5 w-full" data-aos='zoom-in' delay='500'/>
-        <p className="font-bonheur text-4xl px-10">
+                      grid sm:grid-cols-2 grid-cols-1 items-center gap-10" >
+        <div className='flex items-center justify-center '>
+          <img src={profile} className="w-3/4 sm:w-3/5" data-aos='zoom-in' delay='500'/>
+        </div>
+        <p className="font-bonheur text-3xl sm:text-4xl px-5 leading-normal">
           {text.split(' ').map((word, index) => (
             <span
               key={index}
