@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Farsan&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-bonheur: "Bonheur Royale", cursive;
+  --font-dancing: "Dancing Script", 'sans-serif';
+  --font-vibes: "Great Vibes", cursive;
+  --font-farsan: "Farsan", cursive;
+  --color-purple: #6905d2;
+  --color-lightPink: #fcc0c5;
+  --color-mediumPink: #f9728c;
+  --color-darkPink: #ff4a6d;
+  
+  
+}
