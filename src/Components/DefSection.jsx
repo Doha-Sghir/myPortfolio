@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import cv from '../assets/Cv_Doha_Sghir.pdf';
 
 const definitions = [
   "I'm a Computer Science Engineering student",
@@ -51,11 +52,15 @@ export default function DefSection() {
        <div className='mt-15 grid grid-cols-1 sm:grid-cols-2 gap-10 font-semibold'>
         <button className='bg-mediumPink hover:bg-darkPink rounded-lg px-5 py-3 text-lg text-white
                          hover:from-darkPink hover:to-mediumPink cursor-pointer animate-pulse'>
-          Explore my work
+          <a href='#Projects'>
+            Explore my work
+          </a>
         </button>
         <button className='text-mediumPink border-mediumPink border-2 rounded-lg px-5 py-3 text-lg cursor-pointer
                             hover:bg-darkPink hover:text-white animate-bounce'>
-          Download CV
+          <a href={cv} download='Resume_Doha_Sghir.pdf'>
+            Download CV
+          </a>
         </button>
        </div>
     </div>

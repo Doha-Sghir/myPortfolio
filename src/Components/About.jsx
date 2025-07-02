@@ -4,10 +4,11 @@ import profile from '../assets/square_profile.png';
 export default function About() {
   
   return (
-    <div className='bg-zinc-900 py-5 px-10 w-full sm:py-10 sm:px-50 flex flex-col items-center text-white border-t-2 border-zinc-700'
-        id='about'
+    <div className='bg-zinc-900 py-5 px-10 w-full sm:py-15 sm:px-50 flex flex-col items-center text-white border-t-2 border-zinc-700
+                    scroll-mt-20'
+        id='About'
     >
-      <h1 className='mb-14 text-4xl font-bold border-b-4 border-mediumPink pb-5'
+      <h1 className='mb-14 text-3xl sm:text-4xl font-bold border-b-4 border-mediumPink pb-5'
           data-aos='fade-down' data-aos-delay='100'
       >
         About Me

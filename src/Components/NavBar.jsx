@@ -1,16 +1,48 @@
 import React, { useState } from 'react'
 import { Menu, X } from 'lucide-react';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 const menu = [
-  {id: 1, name: 'Home', link: '#'},
-  {id: 2, name: 'About', link: '#about'},
-  {id: 3, name: 'Projects', link: '#'},
+  {id: 1, name: 'Home', link: '/'},
+  {id: 2, name: 'About', link: '#About'},
+  {id: 3, name: 'Projects', link: '#Projects'},
   {id: 4, name: 'Skills', link: '#'},
   {id: 5, name: 'Contact', link: '#'},
 ]
 
 export default function () {
   const [mobileMenu, setMobileMenu] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
+  const [currentElement, setCurrentElement] = useState(localStorage.getItem('cNavbar') || 'Home');
+
+  const handleClick = (element) => {
+
+    setMobileMenu(false);
+    if (element.link === '/') {
+      if(location.pathname !== '/')
+        navigate('/');
+      else
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        })
+    } else {
+      if (location.pathname !== '/') {
+        navigate('/', { replace: false });
+        setTimeout(() => {
+          const el = document.querySelector(element.link);
+          if (el) el.scrollIntoView({ behavior: 'smooth' });
+        }, 100);
+      } else {
+        const el = document.querySelector(element.link);
+        if (el) el.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+    setCurrentElement(element.name);
+    localStorage.setItem('cNavbar', element.name);
+  };
+
 
   return (
 
@@ -24,10 +56,11 @@ export default function () {
         <div className='sm:w-3/4 font-semibold'>
           <div className='hidden sm:flex justify-end gap-10'>
             {menu.map(element =>
-              <a key={element.id} href={element.link} 
-                className='hover:text-mediumPink text-lg font-semibold'>
+              <button key={element.id} onClick={() => handleClick(element)} 
+                className={`hover:text-mediumPink text-lg font-semibold 
+                            ${currentElement === element.name ? 'text-mediumPink' : ''}`}>
                 {element.name}
-              </a>
+              </button>
             )}
           </div>
           <div className='flex justify-end sm:hidden'>
@@ -38,17 +71,17 @@ export default function () {
       {/* Menu for Mobile */}
       {
         mobileMenu && 
-        <div className='p-7 bg-zinc-900 text-white'>
+        <div className='p-7 bg-zinc-900 text-white fixed top-0 left-0 z-50 w-full'>
             <div className='flex justify-end mb-10 font-bold'>
               <X onClick={() => setMobileMenu(false)}/>
             </div>
             <div className='grid grid-cols-1 gap-5 px-5 text-xl'>
               {menu.map(element => 
-                <a key={element.id} href={element.link}
-                  className='active:text-pink active:font-semibold'
+                <button key={element.id} onClick={() => handleClick(element)}
+                  className='active:text-pink active:font-semibold text-left'
                 >
                   {element.name}
-                </a>
+                </button>
               )}
             </div>
         </div>
