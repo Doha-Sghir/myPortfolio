@@ -4,7 +4,7 @@ import profile from '../assets/square_profile.png';
 export default function About() {
   
   return (
-    <div className='bg-zinc-900 py-5 px-10 w-full sm:py-15 sm:px-50 flex flex-col items-center text-white border-t-2 border-zinc-700
+    <div className='bg-zinc-900 py-5 px-10 w-full sm:py-15 lg:px-30 flex flex-col items-center text-white border-t-2 border-zinc-700
                     scroll-mt-20'
         id='About'
     >
@@ -13,8 +13,8 @@ export default function About() {
       >
         About Me
       </h1>
-      <div className='grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-0 items-center'>
-        <img src={profile} className='w-full sm:w-2/3 bg-white rounded-full border-mediumPink border-4'
+      <div className='grid grid-cols-1 lg:grid-cols-2 gap-1 lg:gap-1 items-center'>
+        <img src={profile} className='w-full lg:w-2/3 bg-white rounded-full border-mediumPink border-4'
               data-aos='fade-right' data-aos-delay='400'
         />  
         <p className='text-lg font-light leading-relaxed'

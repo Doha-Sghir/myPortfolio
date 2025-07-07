@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react'
 
+
 export default function ({ image, description, delay, projectName }) {
   const [showOverlay, setShowOverlay] = useState(false);
   const containerRef = useRef(null);

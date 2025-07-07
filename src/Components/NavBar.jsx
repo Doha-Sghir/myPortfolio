@@ -5,16 +5,16 @@ import { useNavigate, useLocation } from 'react-router-dom';
 const menu = [
   {id: 1, name: 'Home', link: '/'},
   {id: 2, name: 'About', link: '#About'},
-  {id: 3, name: 'Projects', link: '#Projects'},
-  {id: 4, name: 'Skills', link: '#'},
-  {id: 5, name: 'Contact', link: '#'},
+  {id: 3, name: 'Skills', link: '#Skills'},
+  {id: 4, name: 'Projects', link: '#Projects'},
+  {id: 5, name: 'Contact', link: '#Connect'},
 ]
 
 export default function () {
   const [mobileMenu, setMobileMenu] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
-  const [currentElement, setCurrentElement] = useState(localStorage.getItem('cNavbar') || 'Home');
+  const [currentElement, setCurrentElement] = useState('Home');
 
   const handleClick = (element) => {
 

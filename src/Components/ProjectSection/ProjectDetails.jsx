@@ -4,6 +4,7 @@ import Asp from '../../assets/ProjetsVideo/Asp_Project.mp4';
 import PI from '../../assets/ProjetsVideo/PI.mp4';
 import CoffeeShop from '../../assets/ProjetsVideo/CoffeeShop.mp4';
 import { useParams, useNavigate } from 'react-router-dom';
+import { FaGithub } from "react-icons/fa";
 
 const projectDetails = {
   MorocAntik: {
@@ -59,8 +60,9 @@ export default function ProjectDetails() {
           href={project.githubLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-blue-500 underline mt-2 inline-block"
+          className="text-blue-500  mt-2 flex gap-2 items-center"
         >
+          <FaGithub />
           View on GitHub
         </a>
       </div>

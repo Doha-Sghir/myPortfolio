@@ -8,6 +8,9 @@ import ProjectSection from './Components/ProjectSection/ProjectSection';
 import About from './Components/About';
 import {BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import ProjectDetails from './Components/ProjectSection/ProjectDetails';
+import Skills from './Components/SkillsSection/Skills';
+import Connect from './Components/Connect';
+import Footer from './Components/Footer';
 
 
 function App() {
@@ -27,13 +30,16 @@ function App() {
             <>
               <DefSection />
               <About />
+              <Skills />
               <ProjectSection />
+              <Connect />
             </>            
           } />
           <Route path='/ProjectDetails/:projectName' element={
             <ProjectDetails />
           } />
         </Routes>
+        <Footer />
       </Router>
     </div>
   )
