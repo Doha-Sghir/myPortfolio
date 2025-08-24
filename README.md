@@ -1,12 +1,33 @@
-# React + Vite
+# 🚀 My Portfolio
+Welcome to my personal portfolio! This site showcases my web development projects, skills, and contact information.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📝 About Me
+I’m a final-year Computer Engineering student at the **National School of Applied Sciences of Fez**. My curriculum covers a wide range of computer science areas, giving me a broad perspective and versatility. I discovered my true passion in **web development**, and I enjoy building dynamic, responsive, and user-friendly interfaces. I’m currently looking for a **final-year internship** to apply my skills and complete my engineering degree.
 
-Currently, two official plugins are available:
+## 💡Freatures
+- Responsive design for mobile and desktop.
+- Showcases projects with video demos.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Technologies Used
+- **React.js** – for building dynamic user interfaces 
 
-## Expanding the ESLint configuration
+- **Tailwind CSS** – for styling and responsive design
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Lucide React** – for icons
+
+## 📸 Demo
+[Watch the full demo video](https://drive.google.com/file/d/1-ZMcDwJ8jsw3SUgRl9rt7jlX9b_uVliQ/view?usp=sharing)
+
+## 📂 Running Locally
+```bash
+git clone https://github.com/Doha-Sghir/myPortfolio.git
+cd myPortfolio
+npm install
+npm run dev
+```
+
+## 📫 Contact
+
+- **Email:** [sghirdoha2@gmail.com](https://mail.google.com/mail/?view=cm&fs=1&to=sghirdoha2@gmail.com)  
+- **LinkedIn:** [Doha Sghir](https://www.linkedin.com/in/doha-sghir-23a81727b/)  
+- **GitHub:** [Doha-Sghir](https://github.com/Doha-Sghir)  
