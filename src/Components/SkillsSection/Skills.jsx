@@ -19,12 +19,12 @@ const skills = [
   }, {
     title: 'Tools & Platforms',
     icon: Wrench,
-    skills: ['GitHub', 'Postman', 'VS Code'],
+    skills: ['GitHub', 'Postman', 'Docker', 'VS Code'],
     delay: 300
   }, {
     title: 'Databases',
     icon: Database,
-    skills: ['MySQL', 'SQL Server', 'SQLite', 'Oracle', 'Relational & Object-Oriented DB Design (Oracle)'],
+    skills: ['MySQL', 'SQL Server', 'SQLite', 'Oracle', 'MongoDB', 'Relational & Object-Oriented DB Design (Oracle)'],
     delay: 400
   }, {
     title: 'Programming Languages',

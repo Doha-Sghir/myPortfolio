@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import cv from '../assets/Cv_Doha_Sghir.pdf';
+import cv from '../assets/Cv-Doha-Sghir.pdf';
 
 const definitions = [
   "I'm a Computer Science Engineering student",
