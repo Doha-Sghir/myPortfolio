@@ -3,33 +3,40 @@ import piImage from '../../assets/ProjectsHomePage/PI.png'
 import aspImage from '../../assets/ProjectsHomePage/Asp.png'
 import coffeeShopImage from '../../assets/ProjectsHomePage/CoffeeShop.png'
 import morocAntikImage from '../../assets/ProjectsHomePage/MorocAntik.png'
+import RHPlus from '../../assets/ProjectsHomePage/RHPlus.png'
 import ProjectCard from './ProjectCard'
 
 const projectInfo = [
   {
     id: 1,
+    projectName: 'RHPlus',
+    image: RHPlus,
+    description: 'RHPlus is a modern, Morocco-focused HR platform that simplifies leave management and HR processes through an intuitive, affordable, and locally adapted digital solution.',
+    delay: 200
+  },  {
+    id: 2,
     projectName: 'MorocAntik',
     image: morocAntikImage,
     description: 'MorocAntik is an online platform that showcases and sells traditional Moroccan antiques, crafts, and cultural treasures.',
-    delay: 300
+    delay: 400
   }, {
-    id: 2, 
+    id: 3, 
     projectName: 'PowerLearn',
     image: aspImage,
     description: 'A website for PowerLearn Center, an educational center, that supports user registration, course enrollment, and management.',
-    delay: 500
+    delay: 600
   }, {
-    id: 3,
+    id: 4,
     projectName: 'SocialProtection',
     image: piImage,
     description: 'Website for managing and exporting social protection consultations at the Prefecture of Fès.',
-    delay: 700
+    delay: 800
   }, {
-    id: 4,
+    id: 5,
     projectName: 'CoffeeShop',
     image: coffeeShopImage,
     description: 'A website for Drink & Smile, a coffee shop, where customers can explore the menu, place orders, and learn about services.',
-    delay: 900
+    delay: 1000
   }
 ]
 

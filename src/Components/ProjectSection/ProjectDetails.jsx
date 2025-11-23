@@ -3,10 +3,17 @@ import MorocAntik from '../../assets/ProjetsVideo/MorocAntik.mp4';
 import Asp from '../../assets/ProjetsVideo/Asp_Project.mp4';
 import PI from '../../assets/ProjetsVideo/PI.mp4';
 import CoffeeShop from '../../assets/ProjetsVideo/CoffeeShop.mp4';
+import RHPlus from '../../assets/ProjetsVideo/RHPlusForGitHub.mp4'
 import { useParams, useNavigate } from 'react-router-dom';
 import { FaGithub } from "react-icons/fa";
 
 const projectDetails = {
+  RHPlus: {
+    video: RHPlus,
+    description: 'RHPlus is a modern, Morocco-focused HR platform that simplifies leave management and HR processes through an intuitive, affordable, and locally adapted digital solution.',
+    technologies: ['React js', 'Tailwind CSS', 'Express js', 'MongoDB'],
+    githubLink: 'https://github.com/Doha-Sghir/RHPlus-MERN-Stack-HR-Management-Solution',
+  },
   MorocAntik: {
     video: MorocAntik,
     description: 'MorocAntik is an online platform that showcases and sells traditional Moroccan antiques, crafts, and cultural treasures.',

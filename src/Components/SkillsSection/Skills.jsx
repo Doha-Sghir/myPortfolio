@@ -12,7 +12,7 @@ const skills = [
         skills: ['React', 'Tailwind CSS']
       }, {
         title: 'Backend',
-        skills: ['Django', 'ASP.NET', 'Jakarta EE']
+        skills: ['Django', 'ASP.NET', 'Jakarta EE', 'Spring Boot']
       }
     ], 
     delay: 200
